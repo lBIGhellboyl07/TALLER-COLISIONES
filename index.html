@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Colisiones 2D</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #58a6ff;
+    }
+    p {
+      font-size: 1.2em;
+      color: #c9d1d9;
+    }
+    .buttons {
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background: #238636;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+    }
+    .btn-secondary {
+      background: #21262d;
+      color: #58a6ff;
+      border: 1px solid #58a6ff;
+    }
+    .btn-secondary:hover {
+      background: #30363d;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    img {
+      max-width: 600px;
+      width: 90%;
+      margin-top: 20px;
+      border-radius: 12px;
+      border: 2px solid #30363d;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #161b22;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Taller de Colisiones 2D</h1>
+    <p>Simulación en <strong>Python + Pygame</strong> de detección de colisiones entre círculos y rectángulos.</p>
+    <div class="buttons">
+      <a href="https://github.com/lbighellboy07/TALLER-COLISIONES" target="_blank" class="btn btn-primary">Ver en GitHub</a>
+      <a href="#instrucciones" class="btn btn-secondary">Cómo ejecutarlo</a>
+    </div>
+  </header>
+
+  <section id="demo">
+    <h2>📸 Demo</h2>
+    <img src="demo.png" alt="Captura de la simulación">
+  </section>
+
+  <section id="instrucciones">
+    <h2>Instrucciones</h2>
+    <p>Clona el repositorio y ejecuta la simulación en tu PC:</p>
+    <pre style="text-align: left; background: #161b22; padding: 15px; border-radius: 8px; max-width: 600px; margin: 20px auto; overflow-x: auto;">
+git clone https://github.com/tu-usuario/TALLER-COLISIONES.git
+cd TALLER-COLISIONES
+pip install -r requirements.txt
+python main.py
+    </pre>
+  </section>
+
+  <section id="controles">
+    <h2>Controles</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>ESPACIO → Iniciar simulación</li>
+      <li>C → Cambiar método (Fuerza Bruta / AABB)</li>
+      <li>P → Volver al menú</li>
+      <li>ESC → Salir</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Taller de Colisiones 2D | Hecho en Python + Pygame</p>
+  </footer>
+</body>
+</html>
